@@ -1,0 +1,12 @@
+<h1>Main#login</h1>
+<%= form_with url: main_create_path, method: :post , data: {turbo: false} do |f| %>
+    <div>
+        <%=f.label :login, "username"%> 
+        <%=f.text_field :login%>
+    </div>
+    <div>
+        <%=f.label :login, "password"%> 
+        <%=f.password_field :password%>
+    </div>
+   <%=f.submit :OK %>
+<% end %>
